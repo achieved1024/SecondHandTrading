@@ -1,0 +1,31 @@
+环境:
+jdk1.8
+node14
+mysql8.x
+maven3.6+
+源码路径中不能含中文空格目录
+
+创建second_hand_trading数据库，导入second_hand_trading.sql数据
+
+ctrl+shift+A，点文件，搜索application.properties，
+将
+    username: root
+    password: 123456
+改成你自己mysql的用户名和密码
+
+
+userFilePath中改成你项目中/backend/xmtp的实际绝对路径，注路径中不能有中文空格
+
+
+一定是先启动后端再启动前端
+后端启动
+方式一：上方工具栏中找到 ServerApplication，点击旁边的运行
+方式二：ctrl+shift+A，点文件，搜 ServerApplication，点击左侧的运行
+前端启动
+方式一：上方工具栏点击编辑配置－＞添加－＞npm->配置package.json下拉选择项目前端的package.json文件，脚本选择dev->确定->运行
+方式二：ctrl+shift+A，点文件，搜package.json，点击npm run dev左侧的运行
+方式三：IDEA中 flower_frontend 目录右键打开于终端输入 npm run dev
+
+
+管理员帐密: admin 123456
+用户帐密: 13333333333 123456
